@@ -1,0 +1,13 @@
+use("platzi_store")
+
+//Using $gt(>) & $gte (>=)
+//db.inventory.find({qty:{$gte:20}})
+
+//Using $lt(<) & $lte(<=)
+//db.inventory.find({qty:{$lte:20}})
+
+db.inventory.find({
+    "item.code":"123",
+    qty:{$gte:20,$lte:25}
+ 
+})

@@ -1,0 +1,10 @@
+use("platzi_store")
+
+db.inventory.updateMany({},{
+    $pull:{
+        tags: "book"
+    }
+
+
+
+})

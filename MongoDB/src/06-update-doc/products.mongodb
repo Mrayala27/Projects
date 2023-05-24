@@ -1,0 +1,39 @@
+use("platzi_store")
+
+db.products.drop()
+
+db.products.insertMany([
+    {
+        _id:1,
+        name:"Monitor 20 pulgadas",
+        price: 5000,
+
+
+    },
+    {
+        _id:2,
+        name:"Teclado",
+        price: 2000,
+    },
+    {
+        _id:3,
+        name:"Mouse",
+        price: 3000,
+    },
+    {
+        _id:4,
+        name:"Cpu",
+        price: 3000,
+    },
+    {
+        name:"case",
+        price: 4000,
+    }
+
+
+
+], {
+    ordered: false
+})
+
+db.products.find()
